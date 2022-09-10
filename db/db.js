@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const connectionUrl = "mongodb://127.0.0.1:27017/SocialMedia"
+const connectionUrl = "mongodb+srv://sparsharora15:sparsharora15@cluster0.qcpeol2.mongodb.net/?retryWrites=true&w=majority"
 
 exports.connect = async()=>{
     try{
