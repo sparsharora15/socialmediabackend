@@ -62,7 +62,7 @@ exports.getAllPosts = async (req, res) => {
                     {
                         path: "userId",
                         model: "User",
-                        select:"name"
+                        select: "name"
                     }
                 ]
             }
@@ -75,6 +75,17 @@ exports.getAllPosts = async (req, res) => {
                 res.send(posts)
             }
         })
+}
+
+exports.deletePost = async (req, res) => {
+    try {
+        console.log(req.body)
+        await Posts.findOneAndDelete({ _id: req.body.postid })
+        res.send('Deleted Successfully')
+    }
+    catch (e) {
+        console.log(e)
+    }
 }
 // exports.getAllCommentOnPost = async (req, res) => {
 //     Posts.findAll({})
