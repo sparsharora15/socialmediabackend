@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const connectionUrl = "mongodb+srv://sparsharora15:sparsharora15@cluster0.qcpeol2.mongodb.net/?retryWrites=true&w=majority"
+const connectionUrl = "mongodb+srv://sparsharora15:sparsharora9627@cluster0.qcpeol2.mongodb.net/?retryWrites=true&w=majority"
 
 exports.connect = async()=>{
     try{
